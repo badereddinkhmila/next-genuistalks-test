@@ -54,6 +54,7 @@ export const GameTableContextProvider = ({children}:Props) => {
                     .sort(( a, b )=> (a.player.localeCompare(b.player)));
                     snapshot.docChanges().forEach((change)=> {
                         if (change.type == 'modified') {
+                            // @ts-ignore
                             const oldSnapShotData:any[] = Object.entries(snapshot._snapshot.oldDocs.sortedSet.root.key.data.value.mapValue.fields)
                             const changedElement = oldSnapShotData.find((element) => {
                                 return parseInt(element[1].integerValue) != resultTable.findLast((val)=> val.player == element[0])?.note
