@@ -1,5 +1,5 @@
 {
-  "name": "next-ecommerce",
+  "name": "next-genuistalks-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "firebase": "^10.8.0",
+    "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.1"
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
+    "sass": "^1.71.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "daisyui": "^4.7.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "typescript": "^5"
   }
 }
